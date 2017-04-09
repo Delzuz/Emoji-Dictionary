@@ -9,7 +9,7 @@
 import UIKit
 
 class DefinitionViewController: UIViewController {
-    
+    // de olika outletsen som är kopplade till där emojin ska visas och dens beskrivelse
     @IBOutlet weak var EmojiLabel: UILabel!
     @IBOutlet weak var definationLabel: UILabel!
     
@@ -21,7 +21,7 @@ class DefinitionViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         EmojiLabel.text = emoji
-        
+        /// här är de olika emoji med deras definition och jag har stavat fel på "Definition"
         if emoji == "😀" {
             definationLabel.text = "Glad Gubbe!"
         }

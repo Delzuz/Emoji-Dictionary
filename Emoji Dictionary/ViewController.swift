@@ -23,11 +23,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         dacooltv.delegate = self
         
     }
-    
+    /// det som avgör hur många rader det ska finnas i tableview
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return emojis.count
     }
-    
+    /// Detta är de som utgör vad som är i de olika raderna
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         print(indexPath.row)
         let cell = UITableViewCell()
@@ -35,7 +35,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
         
     }
-    
+    /// Delen som skickar över dig till nästa skärm och visa emojin du valt
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let emoji = emojis[indexPath.row]
