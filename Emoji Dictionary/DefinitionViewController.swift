@@ -10,6 +10,10 @@ import UIKit
 
 class DefinitionViewController: UIViewController {
     // de olika outletsen som är kopplade till där emojin ska visas och dens beskrivelse
+   
+    
+    @IBOutlet weak var birthYearLable: UILabel!
+    @IBOutlet weak var categoryLable: UILabel!
     @IBOutlet weak var EmojiLabel: UILabel!
     @IBOutlet weak var definationLabel: UILabel!
     
@@ -24,6 +28,8 @@ class DefinitionViewController: UIViewController {
         /// här är de olika emoji med deras definition och jag har stavat fel på "Definition"
         if emoji == "😀" {
             definationLabel.text = "Glad Gubbe!"
+            categoryLable.text = "Category: Smiley"
+            birthYearLable.text = "BirthYear: 2009"
         }
         if emoji == "😇" {
             definationLabel.text = "Änglen!"
@@ -39,6 +45,8 @@ class DefinitionViewController: UIViewController {
         }
         if emoji == "☠️" {
             definationLabel.text = "Död Gubbe!"
+            categoryLable.text = "Category: Döskalle"
+            birthYearLable.text = "BirthYear: 2008"
         }
     }
 
